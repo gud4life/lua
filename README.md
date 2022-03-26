@@ -12,21 +12,7 @@ else
   loadfile("/sdcard/Notes/Main")()
 end
 ```
-## 2. Auto (for clone: 12 Candles)
-```
-gg.setVisible(false)
----
-portal('Night')
-candlefarm(22,22)
-portal('CandleSpace')
----
-while true do
-if gg.isVisible(true) then
-  portal('CandleSpace')
-end
-end
-```
-## 3. Buy Pack
+## 2. Buy Pack
 ```
 function start()
 
@@ -60,7 +46,7 @@ while true do
   end
 end
 ```
-## 4. Complete all seasonal quests
+## 3. Complete all seasonal quests
 ```
 gg.clearResults()
 gg.searchNumber("7037807", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
