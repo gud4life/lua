@@ -1,7 +1,7 @@
 ## 1. Custom (CV)
 ```
 gg.setVisible(false)
-cAPI = gg.makeRequest('https://github.com/haker2k3/sky/raw/main/3-Custom').content
+cAPI = gg.makeRequest('https://raw.githubusercontent.com/zzCx5JZ1Ce/lua/main/Sky/3-Custom').content
 if not cAPI then
   gg.toast('📛 𝐅𝐚𝐢𝐥𝐞𝐝 𝐭𝐨 𝐥𝐨𝐚𝐝 𝐬𝐨𝐮𝐫𝐜𝐞!')
 else
