@@ -1,0 +1,21 @@
+function setvalue(address,flags,value) local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value gg.setValues(tt) end
+
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1a79598
+setvalue(so + py, 4, -476053503)
+
+-- Var #B040359C --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1a7959c
+setvalue(so + py, 4, -516948194)
+
+-- Var #B07270E4 --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1d9d0e4
+setvalue(so + py, 4, -476053503)
+
+-- Var #B07270E8 --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1d9d0e8
+setvalue(so + py, 4, -516948194)
+gg.toast("🔰HACK MAP LIÊN QUÂN ĐÃ BẬT🔰")
