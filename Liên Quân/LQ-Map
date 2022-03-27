@@ -18,4 +18,4 @@ setvalue(so + py, 4, -476053503)
 so = gg.getRangesList('libil2cpp.so')[1].start
 py = 0x1d9d0e8
 setvalue(so + py, 4, -516948194)
-gg.toast("🔰HACK MAP LIÊN QUÂN ĐÃ BẬT🔰")
+gg.toast("😂 kamVdta: Liên Quân")
