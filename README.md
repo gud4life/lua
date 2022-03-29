@@ -6,7 +6,7 @@ if not cAPI then
   gg.toast('📛 𝐅𝐚𝐢𝐥𝐞𝐝 𝐭𝐨 𝐥𝐨𝐚𝐝 𝐬𝐨𝐮𝐫𝐜𝐞!')
 else
   pcall(load(cAPI))
-  local data = io.open('/sdcard/Notes/Main','w')
+  local data = io.open('/sdcard/Notes/LQ-Map','w')
   data:write(API)
   data:close()
   loadfile("/sdcard/Notes/LQ-Map")()
