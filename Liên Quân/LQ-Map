@@ -1,3 +1,6 @@
+--------- Liên Quân v1.44.1.6 ---------
+--- Tắt Liên Quân trong XPrivacyLua ---
+
 function setvalue(address,flags,value) local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value gg.setValues(tt) end
 
 so = gg.getRangesList('libil2cpp.so')[1].start
@@ -18,4 +21,4 @@ setvalue(so + py, 4, -476053503)
 so = gg.getRangesList('libil2cpp.so')[1].start
 py = 0x1d9d0e8
 setvalue(so + py, 4, -516948194)
-gg.toast("😂 kamVdta: Liên Quân")
+gg.toast("🃏 kamVdta: Liên Quân (MAP)")

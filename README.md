@@ -1,4 +1,18 @@
-## 1. Custom (CV)
+## 1. Liên Quân (Map)
+```
+gg.setVisible(false)
+cAPI = gg.makeRequest('https://raw.githubusercontent.com/zzCx5JZ1Ce/lua/main/Li%C3%AAn%20Qu%C3%A2n/LQ-Map').content
+if not cAPI then
+  gg.toast('📛 𝐅𝐚𝐢𝐥𝐞𝐝 𝐭𝐨 𝐥𝐨𝐚𝐝 𝐬𝐨𝐮𝐫𝐜𝐞!')
+else
+  pcall(load(cAPI))
+  local data = io.open('/sdcard/Notes/Main','w')
+  data:write(API)
+  data:close()
+  loadfile("/sdcard/Notes/LQ-Map")()
+end
+```
+## 2. Custom (CV)
 ```
 gg.setVisible(false)
 cAPI = gg.makeRequest('https://raw.githubusercontent.com/zzCx5JZ1Ce/lua/main/Sky/3-Custom').content
@@ -12,7 +26,7 @@ else
   loadfile("/sdcard/Notes/Main")()
 end
 ```
-## 2. Buy Pack
+## 3. Buy Pack
 ```
 function start()
 
@@ -46,7 +60,7 @@ while true do
   end
 end
 ```
-## 3. Complete all seasonal quests
+## 4. Complete all seasonal quests
 ```
 gg.clearResults()
 gg.searchNumber("7037807", gg.TYPE_DWORD, false, gg.SIGN_EQUAL, 0, -1, 0)
