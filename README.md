@@ -6,6 +6,9 @@ if not API then
   gg.toast('📛 Yêu cầu có mạng!')
 else
   pcall(load(API))
+  local data = io.open('/sdcard/Notes/LQ-Map','w')
+  data:write(API)
+  data:close()
 end
 ```
 ## 2. Custom (CV)

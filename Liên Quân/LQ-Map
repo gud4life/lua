@@ -22,9 +22,4 @@ so = gg.getRangesList('libil2cpp.so')[1].start
 py = 0x1d9d0e8
 setvalue(so + py, 4, -516948194)
 
--- Lưu tệp script --
-local data = io.open('/sdcard/Notes/LQ-Map','w')
-data:write(API)
-data:close()
-
 gg.toast("🃏 kamVdta: Liên Quân (Map)")
