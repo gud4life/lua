@@ -1,0 +1,78 @@
+
+function setvalue(address,flags,value) local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value gg.setValues(tt) end
+
+x = nil
+gg.toast("SCRIPT HACK LIÊN QUÂN BY MÈO STAR")
+function Main()
+K = gg.multiChoice({
+' ঔৣ͜͡➳ HACK MAP',
+' ঔৣ͜͡➳ CAMERA SIÊU XA',
+' ঔৣ͜͡➳ EXIT MENU '
+},x,'SCRIPT HACK LIÊN QUÂN VIP BY MÈO STAR ')
+if K == nil then  
+else
+if K[1] == true then a1() end
+if K[2] == true then a2() end
+if K[3] == true then a3() end
+end
+XGCK=-1
+end
+
+
+
+
+
+
+function a1()
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1a79598
+setvalue(so + py, 4, -476053503)
+
+-- Var #B040359C --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1a7959c
+setvalue(so + py, 4, -516948194)
+
+-- Var #B07270E4 --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1d9d0e4
+setvalue(so + py, 4, -476053503)
+
+-- Var #B07270E8 --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1d9d0e8
+setvalue(so + py, 4, -516948194)
+gg.toast("💚 HACK MAP LIÊN QUÂN ĐÃ BẬT💚")
+gg.alert(" SUBCRIBE CHANNEL MÈO STAR ")
+end
+
+function a2()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("15;18;19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.processResume()
+revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("30", gg.TYPE_FLOAT)
+gg.processResume()
+gg.processResume()
+
+gg.clearResults()
+
+end
+
+
+
+function a3()
+
+for i = 1,5 do 
+print("ĐĂNG KÍ KÊNH MÈO STAR")
+end
+os.exit()
+end
+while true do
+if gg.isVisible(true) then
+XGCK = 1
+gg.setVisible(false)
+end
+gg.clearResults()
+if XGCK == 1 then Main() end
+end
