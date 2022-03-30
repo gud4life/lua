@@ -3,13 +3,9 @@
 gg.setVisible(false)
 API = gg.makeRequest('https://raw.githubusercontent.com/zzCx5JZ1Ce/lua/main/Li%C3%AAn%20Qu%C3%A2n/LQ-Map').content
 if not API then
-  gg.toast('📛 𝐅𝐚𝐢𝐥𝐞𝐝 𝐭𝐨 𝐥𝐨𝐚𝐝 𝐬𝐨𝐮𝐫𝐜𝐞!')
+  gg.toast('📛 Yêu cầu có mạng!')
 else
   pcall(load(API))
-  local data = io.open('/sdcard/Notes/LQ-Map','w')
-  data:write(API)
-  data:close()
-  loadfile("/sdcard/Notes/LQ-Map")()
 end
 ```
 ## 2. Custom (CV)
