@@ -33,10 +33,10 @@ A = gg.choice({
 '💫 25%',
 '💫 30%'
 },nil,'kamVdta: Liên Quân (Map)')
-if A[1] == true then gg.editAll("20", gg.TYPE_FLOAT) end
-if A[2] == true then gg.editAll("22", gg.TYPE_FLOAT) end
-if A[3] == true then gg.editAll("24", gg.TYPE_FLOAT) end
-if A[4] == true then gg.editAll("26", gg.TYPE_FLOAT) end
-if A[5] == true then gg.editAll("30", gg.TYPE_FLOAT) end
+if A == 1 then gg.editAll("20", gg.TYPE_FLOAT) end
+if A == 2 then gg.editAll("22", gg.TYPE_FLOAT) end
+if A == 3 then gg.editAll("24", gg.TYPE_FLOAT) end
+if A == 4 then gg.editAll("26", gg.TYPE_FLOAT) end
+if A == 5 then gg.editAll("30", gg.TYPE_FLOAT) end
 end
 end
