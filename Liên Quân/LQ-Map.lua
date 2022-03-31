@@ -1,24 +1,8 @@
 --------- Liên Quân v1.44.1.6 ---------
 --- Tắt Liên Quân trong XPrivacyLua ---
 
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("15;18;19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
-
 function setvalue(address,flags,value) local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value gg.setValues(tt) end
 
-function Main()
-A = gg.choice({
-'💫 Đèn pin',
-'💫 Cam xa',
-'⚠️ Tắt Menu'
-},nil,'kamVdta: Liên Quân (Map)')
-if A[1] == true then a1() end
-if A[2] == true then a2() end
-if A[3] == true then a3() end
-end
-
-function a1()
 so = gg.getRangesList('libil2cpp.so')[1].start
 py = 0x1a79598
 setvalue(so + py, 4, -476053503)
@@ -37,33 +21,22 @@ setvalue(so + py, 4, -476053503)
 so = gg.getRangesList('libil2cpp.so')[1].start
 py = 0x1d9d0e8
 setvalue(so + py, 4, -516948194)
-
 gg.toast("🃏 Đã bật đèn pin")
-end
 
-function a2()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("15;18;19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
 A = gg.choice({
 '💫 10%',
 '💫 15%',
 '💫 20%',
 '💫 25%',
 '💫 30%'
-},nil,'kamVdta: Cam xa')
+},nil,'kamVdta: Liên Quân (Map)')
 if A[1] == true then gg.editAll("20", gg.TYPE_FLOAT) end
 if A[2] == true then gg.editAll("22", gg.TYPE_FLOAT) end
 if A[3] == true then gg.editAll("24", gg.TYPE_FLOAT) end
 if A[4] == true then gg.editAll("26", gg.TYPE_FLOAT) end
 if A[5] == true then gg.editAll("30", gg.TYPE_FLOAT) end
-gg.clearResults()
-end
-
-function a3()
-os.exit()
-end
-
-while true do
-if gg.isVisible(true) then
-gg.setVisible(false)
-Main()
 end
 end
