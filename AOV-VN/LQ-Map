@@ -39,4 +39,3 @@ if A == 3 then gg.editAll("24", gg.TYPE_FLOAT) end
 if A == 4 then gg.editAll("26", gg.TYPE_FLOAT) end
 if A == 5 then gg.editAll("30", gg.TYPE_FLOAT) end
 end
-end
