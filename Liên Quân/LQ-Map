@@ -1,6 +1,10 @@
 --------- Liên Quân v1.44.1.6 ---------
 --- Tắt Liên Quân trong XPrivacyLua ---
 
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("15;18;19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+
 function setvalue(address,flags,value) local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value gg.setValues(tt) end
 
 function Main()
@@ -38,9 +42,6 @@ gg.toast("🃏 Đã bật đèn pin")
 end
 
 function a2()
-gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("15;18;19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
-revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
 A = gg.choice({
 '💫 10%',
 '💫 15%',
