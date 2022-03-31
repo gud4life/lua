@@ -1,7 +1,7 @@
 ## 1. Liên Quân (Map)
 ```
 gg.setVisible(false)
-API = gg.makeRequest('https://raw.githubusercontent.com/zzCx5JZ1Ce/lua/main/Li%C3%AAn%20Qu%C3%A2n/LQ-Map').content
+API = gg.makeRequest('https://raw.githubusercontent.com/zzCx5JZ1Ce/lua/main/AOV-VN/LQ-Map').content
 if not API then
   gg.toast('📛 Yêu cầu có mạng!')
 else
