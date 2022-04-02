@@ -5,6 +5,8 @@ gg.setVisible(false)
 
 function setvalue(address,flags,value) local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value gg.setValues(tt) end
 
+--- Hiện tướng địch ---
+
 so = gg.getRangesList('libil2cpp.so')[1].start
 py = 0x1a79598
 setvalue(so + py, 4, -476053503)
@@ -24,6 +26,50 @@ so = gg.getRangesList('libil2cpp.so')[1].start
 py = 0x1d9d0e8
 setvalue(so + py, 4, -516948194)
 gg.toast("🃏 Đã bật đèn pin")
+
+--- Hiện hồi ulti tướng địch ---
+
+-- Var #B0FBFA28 --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x11f9a28
+setvalue(so + py, 4, -476053503)
+
+-- Var #B0FBFA2C --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x11f9a2c
+setvalue(so + py, 4, -516948194)
+
+-- Var #B1AB4780 --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1cee780
+setvalue(so + py, 4, -476053503)
+
+-- Var #B1AB4784 --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1cee784
+setvalue(so + py, 4, -516948194)
+
+-- Var #B1AB48E8 --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1cee8e8
+setvalue(so + py, 4, -476053503)
+
+-- Var #B1AB48EC --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1cee8ec
+setvalue(so + py, 4, -516948194)
+
+-- Var #B1AB562C --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1cef62c
+setvalue(so + py, 4, -476053503)
+
+-- Var #B1AB5630 --
+so = gg.getRangesList('libil2cpp.so')[1].start
+py = 0x1cef630
+setvalue(so + py, 4, -516948194)
+
+--- Cam xa ---
 
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("15;18;19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
