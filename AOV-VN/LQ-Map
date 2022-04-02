@@ -2,7 +2,6 @@
 --- Tắt Liên Quân trong XPrivacyLua ---
 
 gg.setVisible(false)
-gg.clearResults()
 
 function setvalue(address,flags,value) local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value gg.setValues(tt) end
 
@@ -72,19 +71,41 @@ setvalue(so + py, 4, -516948194)
 
 --- Cam xa ---
 
+enable = 0
+
+function CamXa()
+
+if enable == 0 then 
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.searchNumber("15;18;19", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
 revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+enable = 1
+end
+
 A = gg.choice({
-'💫 10%',
+'💫 0%',
 '💫 15%',
 '💫 20%',
 '💫 25%',
-'💫 30%'
+'💫 30%',
+'🔘 Clear'
 },nil,'kamVdta: Liên Quân (Map)')
-if A == 1 then gg.editAll("20", gg.TYPE_FLOAT) end
+if A == 1 then gg.editAll("18", gg.TYPE_FLOAT) end
 if A == 2 then gg.editAll("22", gg.TYPE_FLOAT) end
 if A == 3 then gg.editAll("24", gg.TYPE_FLOAT) end
 if A == 4 then gg.editAll("26", gg.TYPE_FLOAT) end
 if A == 5 then gg.editAll("30", gg.TYPE_FLOAT) end
+if A == 6 then 
+gg.clearResults()
+enable = 0
+CamXa()
+end
+end
+
 gg.setVisible(false)
+while true do
+  if gg.isVisible(true) then
+    gg.setVisible(false)
+    CamXa()
+  end
+end
