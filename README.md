@@ -1,5 +1,7 @@
 ## 1. ```Liên Quân (Map)```
 https://drive.google.com/file/d/1Zx-WBwyVJXvQJNbovNZvOpUNv-4eF76x/view?usp=sharing
+
+hay quas ```dditjmemay```
 ```
 gg.setVisible(false)
 API = gg.makeRequest('https://raw.githubusercontent.com/zzCx5JZ1Ce/lua/main/AOV-VN/LQ-Map').content
